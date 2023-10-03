@@ -1,20 +1,3 @@
-# Data Engineering Tasks
-Oct 2023
-
-Deadlines
-
-Task 1 - Wednesday 4th Oct. 5pm (AEST)
-
-Task 2 & 3 - Friday 6th Oct. 5pm (AEST)
-
-
-
-## Instruction
-* Make a fork from this repository.
-* Complete the following tasks, commit and push the outcomes to the fork.
-* Update this README file to provide information about the added files and instructions on using them. 
-
-
 ## Task 1
 1.1 - Export the JSON file to a database including MongoDB, or SQL, or Neo4j
 
@@ -23,23 +6,11 @@ Task 2 & 3 - Friday 6th Oct. 5pm (AEST)
 * Number of Organisations (Deduplicated Affiliations)
 * Number of Researchers
 
-Note: you only need to commit the notebook, and you do not need to provide a backup of the database
+## Notebook running instructions
+Research.ipynb is the file that needs to be executed. To run the below things need to be done before executing on your side:
 
-## Task 2
-2.1 - Calculate the following measures in this data
-* Top 10 organisations with the highest degree of centrality 
-* Top 10 researchers with the highest degree of centrality 
+1.1 - Assign mongo_url variable with the connection url to your MongoDB server. Since I created a local server, mine is set to "mongodb://localhost:27017/". If your server is on cloud, use the format mongodb+srv://\<username>:\<password>@<cluster_name>.mongodb.net/\<dbname>?retryWrites=true&w=majority
 
-Note: The main challenge in this task is understanding the structure of the network and working with centrality algorithms. 
-This article can help with the algorithm: https://neo4j.com/docs/graph-data-science/current/algorithms/degree-centrality/
+1.2 - In the line, db = client["sample"], "sample" is my database name. Hence, change it accordingly with your database name.
 
-
-
-## Task 3
-3.1 - Visualise the graph in such a way that shows the overall scale of all the graph nodes and relationships, and highlights the major clusters.  
-
-These are two graph visualisation tools that can be useful.
-* https://gephi.org
-* https://cytoscape.org
-
-Note: The main challenge in this task is dealing with a large graph. This issue can be resolved by merging nodes or creating sub clusters. 
+1.3 - In the line, collection = db["research"], "research" is my collection name. Hence, change it accordingly with your collection name.
