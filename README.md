@@ -14,3 +14,8 @@ Research.ipynb is the file that needs to be executed. To run the below things ne
 1.2 - In the line, db = client["sample"], "sample" is my database name. Hence, change it accordingly with your database name.
 
 1.3 - In the line, collection = db["research"], "research" is my collection name. Hence, change it accordingly with your collection name.
+
+## Task 2
+2.1 - Calculate the following measures in this data
+* Top 10 organisations with the highest degree of centrality
+* Top 10 researchers with the highest degree of centrality
