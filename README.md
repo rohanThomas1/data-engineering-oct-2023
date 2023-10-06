@@ -21,3 +21,5 @@ Research.ipynb is the file that needs to be executed. To run the below things ne
 
 ## Task 3
 3.1 - Visualise the graph in such a way that shows the overall scale of all the graph nodes and relationships, and highlights the major clusters.
+
+Note: My code for creating a graph to show the links between each organisation and author was not working correctly, hence kept the graphs as separate.
